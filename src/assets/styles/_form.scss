@@ -1,0 +1,18 @@
+.form {
+  .header {
+    color: $text-light;
+    font-family: 'HM Alpha Mono';
+  }
+  .success-icon {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+  p,
+  span,
+  input {
+    color: $text-secondary;
+    font-family: $font-family-base;
+  }
+}

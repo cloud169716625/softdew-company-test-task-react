@@ -1,0 +1,38 @@
+.wl-layout {
+  @media (min-width: 320px) {
+    & {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+  @media (min-width: 481px) {
+    & {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+  @media (min-width: 641px) {
+    & {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+  @media (min-width: 961px) {
+    & {
+      padding-left: 8.4rem;
+      padding-right: 8.4rem;
+    }
+  }
+  @media (min-width: 1025px) {
+    & {
+      padding-left: 8.4rem;
+      padding-right: 8.4rem;
+    }
+  }
+  @media (min-width: 1281px) {
+    & {
+      padding-left: 8.4rem;
+      padding-right: 8.4rem;
+    }
+  }
+}

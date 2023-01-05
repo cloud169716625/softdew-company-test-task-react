@@ -1,0 +1,61 @@
+.btn-primary {
+  @include button-variant(
+    $primary,
+    $primary,
+    $text-light,
+    darken($primary, 20%),
+    darken($primary, 20%),
+    $text-light
+  );
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .content {
+    font-size: $alert-content-font-size;
+    margin-left: $alert-margin-content;
+  }
+  &.alert-info {
+    @include alert-variant(
+      $alert-info-light-color,
+      $alert-info-light-color,
+      $alert-dark-color
+    );
+    border-bottom-color: $alert-info-color;
+    border-width: 0;
+  }
+  &.alert-success {
+    @include alert-variant(
+      $alert-success-light-color,
+      $alert-success-light-color,
+      $alert-dark-color
+    );
+    border-bottom-color: $alert-success-color;
+    border-width: 0;
+  }
+  &.alert-danger {
+    @include alert-variant(
+      $alert-danger-light-color,
+      $alert-danger-light-color,
+      $alert-dark-color
+    );
+    border-bottom-color: $alert-danger-color;
+    border-width: 0;
+  }
+  &.alert-warning {
+    @include alert-variant(
+      $alert-warning-light-color,
+      $alert-warning-light-color,
+      $alert-dark-color
+    );
+    border-bottom-color: $alert-warning-color;
+    border-width: 0;
+  }
+  &.alert-action {
+    border-radius: $alert-border-radius $alert-border-radius 0 0;
+    border-bottom-width: 4px;
+  }
+}

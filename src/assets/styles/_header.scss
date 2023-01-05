@@ -1,0 +1,33 @@
+.wl-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  background-color: $dark;
+}
+.wl-header-hr {
+  border-bottom: 1px solid #4c4c4c;
+}
+
+.dropdown-btn {
+  color: #22b14c;
+  font-size: 24px;
+  background: #000;
+}
+
+.dropdown-container {
+  background: #000;
+  color: #22b14c;
+  padding: 10px;
+  border-radius: 0%;
+  border: 1px solid #fff;
+}
+
+.dropdown-item-btn {
+  color: #22b14c !important;
+  border-bottom: 1px solid #fff;
+}
+
+.dropdown-item-btn:last-child {
+  border-bottom: 0px solid #fff;
+}

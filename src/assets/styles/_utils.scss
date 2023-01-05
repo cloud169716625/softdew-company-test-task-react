@@ -1,0 +1,27 @@
+@mixin textSize($name, $size) {
+  .text-#{$name} {
+    font-size: $size !important;
+  }
+}
+@each $fontName, $fontSize in $font-sizes {
+  @include textSize($fontName, $fontSize);
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  &,
+  &:visited {
+    color: $text-light;
+    text-decoration: none;
+    transition: linear 0.2s;
+  }
+  &.hover, &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}

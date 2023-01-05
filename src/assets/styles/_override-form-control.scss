@@ -1,0 +1,160 @@
+@use 'sass:map';
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: $text-light;
+  -webkit-box-shadow: 0 0 0px 1000px $dark inset !important;
+}
+
+.form-group {
+  position: relative;
+  margin: map.get($spacers, 5) 0 map.get($spacers, 5) 0;
+
+  .form-control-input {
+    @extend .form-control;
+    padding-left: 0;
+    padding-right: 0;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    font-size: $f5;
+    border-color: $border-color-primary;
+    background-color: transparent !important;
+
+    // states of input styles
+    &::placeholder {
+      font-size: $f5;
+      color: $text-secondary;
+    }
+
+    &:hover:enabled {
+      &::placeholder {
+        color: $text-secondary;
+      }
+    }
+
+    // If placeholder is not showing, show the floating label
+    &:disabled ~ .floating-label,
+    &:focus ~ .floating-label,
+    &:not(:placeholder-shown) ~ .floating-label {
+      opacity: 1;
+      top: -1rem;
+      bottom: 0px;
+      left: 0px;
+    }
+
+    &:focus {
+      // Removes glow when input is focused
+      box-shadow: none;
+      border-color: $primary;
+    }
+  }
+
+  .floating-left {
+    position: absolute;
+    left: 0;
+    top: 40%;
+  }
+
+  .fixed-label {
+    opacity: 1 !important;
+    top: -0.7rem !important;
+    bottom: 0px !important;
+    left: 0px !important;
+  }
+
+  // labels positioning might be enhanced later
+  .floating-label {
+    opacity: 0;
+    transition: all 0.1s ease;
+    top: 6px;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    font-size: $f6;
+    color: $text-secondary;
+  }
+
+  .error-label {
+    opacity: 0;
+    transition: all 0.1s ease;
+    bottom: 0px;
+    position: absolute;
+    pointer-events: none;
+    color: $danger;
+    font-size: $f6;
+  }
+
+  .info-label {
+    bottom: -20px;
+    position: absolute;
+    pointer-events: none;
+    color: $text-secondary;
+    font-size: $f6;
+  }
+
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+
+  .form-control-input.has-error {
+    border-color: $danger !important;
+
+    // if input is not valid show error label
+    & ~ .error-label {
+      opacity: 1;
+      bottom: -20px;
+      left: 0px;
+    }
+  }
+}
+
+.form-check {
+  &-input[type='radio'] {
+    border: none;
+    background-color: transparent;
+    height: $form-check-radio-checked-outer-width;
+    width: $form-check-radio-checked-outer-width;
+    margin-top: 0;
+
+    box-shadow: 0 0 0 $form-check-radio-border-width $border-color-primary;
+
+    &:checked {
+      background-image: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 $form-check-radio-border-width $primary;
+
+      &::after {
+        content: '';
+        display: block;
+        padding: $form-check-radio-checked-width;
+        border-radius: 50%;
+        background-color: $primary;
+      }
+    }
+  }
+
+  &-input[type='checkbox'],
+  &-input[type='radio'] {
+    transition: 0.3s;
+
+    &:focus {
+      box-shadow: 0 0 0 $form-check-radio-border-width $primary;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 $form-check-radio-border-width $primary;
+    }
+  }
+}

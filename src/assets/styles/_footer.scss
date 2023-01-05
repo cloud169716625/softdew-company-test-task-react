@@ -1,0 +1,33 @@
+.footer-layout {
+  background-color: $dark;
+  padding-top: 4rem;
+  .wl-footer-header {
+    font-weight: bold;
+    font-family: $font-family-base;
+    font-size: 1rem;
+  }
+  .wl-footer-link {
+    font-size: 0.9rem;
+    font-family: $font-family-base;
+    line-height: 1.3rem;
+  }
+  .wl-footer-icon {
+    &:hover {
+      path {
+        fill: $primary;
+      }
+    }
+  }
+}
+
+.border-custom {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-address {
+  font-size: $f6;
+  color: $text-secondary;
+}
+.text-privacy {
+  font-size: $f5;
+}

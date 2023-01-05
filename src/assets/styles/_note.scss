@@ -1,0 +1,39 @@
+.note-layout {
+  margin-top: 6.514rem;
+  margin-bottom: 6.514rem;
+  max-width: 60.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media (min-width: 961px) {
+    & {
+      max-width: 60.625rem;
+    }
+  }
+  @media (min-width: 1025px) {
+    & {
+      max-width: 60.625rem;
+    }
+  }
+  @media (min-width: 1281px) {
+    & {
+      max-width: 70vw;
+    }
+  }
+
+  h5 {
+    font-family: 'Inter';
+    font-size: '1.25rem';
+    font-style: 'normal';
+    font-weight: '600';
+    line-height: '1.5rem';
+    letter-spacing: '0.03em';
+    text-align: 'left';
+  }
+  p {
+    line-height: 1.5rem;
+    color: $text-shadow;
+    margin-bottom: 0;
+  }
+}

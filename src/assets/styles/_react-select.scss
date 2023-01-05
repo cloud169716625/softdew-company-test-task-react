@@ -1,0 +1,113 @@
+@use 'sass:map';
+
+.select-group {
+  position: relative;
+
+  ::-webkit-scrollbar-track {
+    background: $text-light;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $text-dark;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $dark;
+  }
+
+  .floating-label {
+    transition: all 0.1s ease;
+    top: -1rem;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    pointer-events: none;
+    font-size: $f6;
+    color: $text-secondary;
+  }
+
+  .wl-dropdown-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0;
+    width: 100%;
+    border-bottom: 1px solid $border-color-primary;
+  }
+
+  .wl-dropdown-container {
+    width: 100%;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+    position: absolute;
+    z-index: 100000 !important;
+    bottom: -5.625rem;
+    background-color: $text-light;
+  }
+
+  .react-select {
+    &-container {
+      width: 100%;
+      border: none;
+
+      min-width: 7rem;
+    }
+
+    &__control {
+      background-color: $disabled;
+      margin: 0rem 1rem 0rem 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      border-radius: 0;
+    }
+
+    &__option {
+      color: $text-dark;
+      &:hover {
+        background-color: rgba($primary, 0.05);
+        transition: 0.3s;
+      }
+    }
+
+    &__menu {
+      background-color: $white;
+      box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+    }
+    &__menu-list {
+      padding: 0rem 1rem 0rem 1rem;
+    }
+
+    &__option--is-focused {
+      color: $primary;
+      background-color: rgba($primary, 0.05);
+    }
+
+    &__option--is-selected &__option--is-focused {
+      color: $text-light;
+    }
+
+    &__option--is-selected {
+      background-color: $primary !important;
+      color: $text-light;
+    }
+
+    &__control--is-focused {
+      box-shadow: none;
+      border: none;
+    }
+
+    &__indicator-separator {
+      width: 0;
+    }
+
+    &__value-container {
+      padding-left: 0;
+      padding-right: 0;
+      color: $text-light;
+    }
+    &__single-value {
+      color: $text-light;
+    }
+  }
+}

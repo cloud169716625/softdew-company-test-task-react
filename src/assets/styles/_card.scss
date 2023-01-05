@@ -1,0 +1,45 @@
+.card-layout {
+  padding-top: 4rem;
+  padding-bottom: 6.481rem;
+
+  p {
+    font-family: $font-family-base;
+    font-weight: 500;
+    font-size: $f3;
+    line-height: 2.375rem;
+    color: $text-dark;
+  }
+  img {
+    width: 100%;
+    max-width: 33.5rem;
+    max-height: 21rem;
+  }
+
+  @media (min-width: 320px) {
+    & {
+      text-align: center;
+      p {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+  @media (min-width: 481px) {
+    & {
+      text-align: center;
+      p {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+  @media (min-width: 641px) {
+    & {
+      text-align: center;
+      p {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}

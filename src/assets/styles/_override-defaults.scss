@@ -1,0 +1,80 @@
+$enable-rounded: true !default;
+$border-radius: $button-border-radius;
+
+// Export new custom theme colors
+$theme-colors: (
+  primary: $primary,
+  dark: $dark,
+  text-dark: $text-dark,
+  text-shadow: $text-shadow,
+  text-light: $text-light,
+  text-secondary: $text-secondary,
+  disabled: $disabled,
+);
+
+.spinner-border {
+  border: $spinner-border-width solid $text-light;
+  border-right-color: $text-light;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.btn-wide {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn-responsive {
+  @extend .btn-primary;
+  @media (min-width: 320px) {
+    & {
+      width: 7.5rem;
+      padding: 0.5rem 0 0.5rem 0 !important;
+      font-size: 0.75rem !important;
+    }
+  }
+  @media (min-width: 481px) {
+    & {
+      width: 7.5rem;
+      padding: 0.5rem 0 0.5rem 0 !important ;
+      font-size: 0.75rem !important;
+    }
+  }
+  @media (min-width: 641px) {
+    & {
+      width: auto;
+      padding: 0.5rem 3rem 0.5rem 3rem !important;
+      font-size: 1rem !important;
+    }
+  }
+  @media (min-width: 961px) {
+    & {
+      width: auto;
+      padding: 0.5rem 3rem 0.5rem 3rem !important;
+      font-size: 1rem !important;
+    }
+  }
+  @media (min-width: 1025px) {
+    & {
+      width: auto;
+      padding: 0.5rem 3rem 0.5rem 3rem !important;
+      font-size: 1rem !important;
+    }
+  }
+  @media (min-width: 1281px) {
+    & {
+      width: auto;
+      padding: 0.5rem 3rem 0.5rem 3rem !important;
+      font-size: 1rem !important;
+    }
+  }
+}

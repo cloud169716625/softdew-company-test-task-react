@@ -1,0 +1,92 @@
+$primary: #02d1ae;
+$dark: #000000;
+
+$text-dark: #000000;
+$text-shadow: #6a6a6a;
+$text-light: #ffffff;
+$text-secondary: #c3c3c3;
+$disabled: #e8e8e8;
+
+$info: #003edd;
+$info-light: #d6e4ff;
+$success: #41ccb4;
+$success-light: #e2f5ec;
+$danger: #f5325c;
+$danger-light: #ffebef;
+$warning: #ffcf0f;
+$warning-light: #fff9cf;
+
+// Font-sizes based on design system
+$f2: 3rem;
+$f3: 1.5rem;
+$f4: 1.25rem;
+$f5: 1rem;
+$f6: 0.75rem;
+$hero: 4.5rem;
+
+$h1: 1.75rem;
+
+$font-sizes: (
+  f2: $f2,
+  f3: $f3,
+  f4: $f4,
+  f5: $f5,
+  f6: $f6,
+  hero: $hero,
+  h1: $h1,
+);
+
+// Buttons attributes
+$button-border-radius: 6.25rem;
+
+// Font family extra
+$font-family-extra: 'HM Alpha Mono';
+// Font family base
+$font-family-base: 'Inter';
+
+$border-color-primary: #3c3b3b;
+
+$modal-header-padding: 0;
+$modal-header-border-width: 0;
+$modal-content-inner-border-radius: 0;
+$modal-header-border-color: transparent;
+$modal-content-bg: #191919;
+$modal-content-color: $text-light;
+$modal-backdrop: rgba(0, 0, 0, 0.7);
+$modal-inner-padding: 0;
+
+$input-bg: $dark;
+$input-color: $text-light;
+
+$form-check-radio-checked-outer-width: 1.5rem;
+$form-check-radio-border-width: 0.125rem;
+$form-check-radio-border-color: #e7e8eb;
+$form-check-radio-checked-width: 0.4rem;
+
+// Customize alert
+$alert-dismissible-border-width: 0.5rem;
+$alert-content-font-size: 0.75rem;
+$alert-icon-size: 1.438rem;
+$alert-close-icon-size: 1.25rem;
+$alert-margin-content: 1.125rem;
+
+$progress-height: 0.25rem;
+
+$alert-border-radius: 0.75rem;
+$alert-padding-y: 1rem;
+$alert-padding-x: 1.25rem;
+
+$alert-info-color: $info;
+$alert-info-light-color: $info-light;
+$alert-success-color: $success;
+$alert-success-light-color: $success-light;
+$alert-danger-color: $danger;
+$alert-danger-light-color: $danger-light;
+$alert-warning-color: $warning;
+$alert-warning-light-color: $warning-light;
+$alert-light-color: $text-light;
+$alert-dark-color: $dark;
+
+// Customize spinner
+$spinner-border-width: 0.188rem;
+$spinner-width: 10rem;

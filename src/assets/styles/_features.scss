@@ -1,0 +1,51 @@
+.features-layout {
+  border-bottom: 1px solid #e8e8e8;
+
+  .features-text-caption {
+    color: $text-shadow;
+    font-family: $font-family-base;
+    margin-bottom: 4rem;
+  }
+
+  .features-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .img-container {
+      width: 4rem;
+      height: 4rem;
+      border: 1px solid #e8e8e8;
+      margin-right: 1.5rem;
+      margin-left: 0.5rem;
+      display: block;
+      position: relative;
+    }
+
+    .features-title {
+      font-family: $font-family-base;
+      font-weight: 500;
+      color: $text-dark;
+      line-height: 2rem;
+      font-size: $f4;
+    }
+
+    .features-description {
+      color: $text-shadow;
+      font-family: $font-family-base;
+      font-size: $f5;
+      margin-bottom: 0.5rem !important;
+    }
+
+    span {
+      color: $text-shadow;
+      font-family: $font-family-base;
+      display: block;
+      width: calc(100% - 64px);
+    }
+
+    .note {
+      font-size: $f6;
+    }
+  }
+}

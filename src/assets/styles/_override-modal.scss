@@ -1,0 +1,101 @@
+.modal-dialog {
+  @media (min-width: 320px) {
+    & {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  @media (min-width: 481px) {
+    & {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  @media (min-width: 641px) {
+    & {
+      margin: auto;
+      width: auto;
+      height: auto;
+    }
+  }
+  @media (min-width: 961px) {
+    & {
+      margin: auto;
+      width: auto;
+      height: auto;
+    }
+  }
+  @media (min-width: 1025px) {
+    & {
+      margin: auto;
+      width: auto;
+      height: auto;
+    }
+  }
+  @media (min-width: 1281px) {
+    & {
+      margin: auto;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.modal-content {
+  background-color: $modal-content-bg;
+  color: $modal-content-color;
+
+  .close {
+    margin: 1.125rem 1.125rem 0 0;
+  }
+}
+
+.modal-body {
+  @media (min-width: 320px) {
+    & {
+      padding: 2.875rem 1.25rem 4rem 1.25rem;
+    }
+  }
+  @media (min-width: 481px) {
+    & {
+      padding: 2.875rem 1.25rem 4rem 1.25rem;
+    }
+  }
+  @media (min-width: 641px) {
+    & {
+      padding: 2.875rem 4rem 4rem 4rem;
+    }
+  }
+  @media (min-width: 961px) {
+    & {
+      padding: 2.875rem 4rem 4rem 4rem;
+    }
+  }
+  @media (min-width: 1025px) {
+    & {
+      padding: 2.875rem 4rem 4rem 4rem;
+    }
+  }
+  @media (min-width: 1281px) {
+    & {
+      padding: 2.875rem 4rem 4rem 4rem;
+    }
+  }
+}
+
+.modal-backdrop {
+  background-color: $modal-backdrop !important;
+  opacity: 0.7 !important;
+}
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
